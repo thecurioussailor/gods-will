@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
-
+import { IconArrowRight } from "@tabler/icons-react";
 export const HoverEffect = ({
   items,
   className,
@@ -49,7 +49,15 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <div className="flex flex-row gap-2 justify-between items-center">
+              <CardTitle>{item.title}</CardTitle>
+              <button
+                onClick={() => {}}
+                className="flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+              >
+                <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover:-rotate-45 dark:text-neutral-400" />
+              </button>
+            </div>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </a>
@@ -85,7 +93,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide", className)}>
       {children}
     </h4>
   );

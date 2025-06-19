@@ -14,7 +14,7 @@ const Hero = () => {
         </div>
         <h1 className="text-4xl font-bold text-left">Hi, I'm Ashutosh,</h1>
         <h2 className="text-left">Full Stack Developer | Blockchain Enthusiast | Recent Build: <Link href="https://tinywallet.in" target="_blank" className="text-[#1dd79b]">TinyWallet</Link></h2>
-        <TextGenerateEffect words={words} className="text-lg text-left w-5/6 pt-4 text-white font-normal"/>
+        <TextGenerateEffect words={words} className="text-lg text-left w-5/6 text-white font-normal"/>
     </div>
   )
 }
