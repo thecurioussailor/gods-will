@@ -19,7 +19,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3",
         className
       )}
     >
@@ -48,9 +48,9 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
+          <Card className="bg-[#121212] border-zinc-800">
             <div className="flex flex-row gap-2 justify-between items-center">
-              <CardTitle>{item.title}</CardTitle>
+              <CardTitle className="text-xl">{item.title}</CardTitle>
               <button
                 onClick={() => {}}
                 className="flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"

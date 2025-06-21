@@ -3,11 +3,12 @@ import Projects from "@/components/Projects";
 import Blogs from "@/components/Blogs";
 import Experience from "@/components/Experience";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
 <div className="relative min-h-screen bg-[#161B19]">
-      {/* Grid Background */}
+      Grid Background
       <div
         className={cn(
           "absolute inset-0",
@@ -23,7 +24,7 @@ export default function Home() {
         <Hero />
         <Experience />
         <Projects />
-        <Blogs />
+        <Footer />
       </div>
     </div>
   );
