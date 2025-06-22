@@ -112,7 +112,7 @@ export const FadeInDiv = ({
           }}
           className={cn("w-full h-full absolute top-0 left-0", className)}
         >
-          {React.cloneElement(tab.content, { active: tab.value === active.value })}
+          {tab.content}
         </motion.div>
       ))}
     </div>
