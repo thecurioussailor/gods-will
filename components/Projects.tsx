@@ -87,7 +87,8 @@ export const personalProjects = [
   
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-start items-start w-full md:min-w-2xl lg:min-w-3xl px-6 md:px-0 ">
+    // flex flex-col justify-start items-start gap-2 w-full md:max-w-2xl lg:max-w-3xl mx-auto px-6 md:px-0
+    <div className="flex flex-col justify-start items-start w-full md:max-w-2xl lg:max-w-3xl px-6 md:px-0 ">
         <h1 className="text-4xl font-bold text-[#1dd79b]">Projects</h1>
         <div className="h-[73rem] md:h-[37rem] lg:h-[29rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-10">
             <Tabs tabs={tabs} />

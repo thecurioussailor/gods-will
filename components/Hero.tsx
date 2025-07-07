@@ -12,9 +12,9 @@ const Hero = () => {
             <Link href="https://www.linkedin.com/in/ashutosh-sagar-4b2612185/" target="_blank" className="text-[#1dd79b]"><LuLinkedin size={20}/></Link>
             <Link href="https://x.com/sagar11ashutosh" target="_blank" className="text-[#1dd79b]"><LuTwitter size={20}/></Link>
         </div>
-        <h1 className="text-4xl font-bold text-left">Hi, I'm Ashutosh,</h1>
-        <h2 className="text-left">Full Stack Developer | Blockchain Enthusiast | Recent Build: <Link href="https://tinywallet.in" target="_blank" className="text-[#1dd79b]">TinyWallet</Link></h2>
-        <TextGenerateEffect words={words} className="text-lg text-left w-5/6 text-white font-normal"/>
+        <h1 className="text-3xl md:text-4xl font-bold text-left text-white">Hi, I'm Ashutosh,</h1>
+        <h2 className="text-base text-left text-white/80">Full Stack Developer | Blockchain Enthusiast | Recent Build: <Link href="https://tinywallet.in" target="_blank" className="text-[#1dd79b]">TinyWallet</Link></h2>
+        <TextGenerateEffect words={words} className="text-lg text-left w-5/6 font-normal"/>
     </div>
   )
 }
