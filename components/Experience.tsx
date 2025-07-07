@@ -9,7 +9,7 @@ const Experience = () => {
         {
           title: "Feb 2024 - Present",
           content: (
-            <CardSpotlight className="h-80 w-full rounded-3xl flex flex-col gap-2">
+            <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                 <p className="text-xl font-bold relative z-20 mt-2 text-white">
                     Full Stack Developer <span className="text-neutral-300 font-normal">@Ionfirm Corporation</span>
                 </p>
@@ -53,7 +53,7 @@ const Experience = () => {
         {
           title: "March 2023 - Jan 2024",
           content: (
-            <CardSpotlight className="h-80 w-full rounded-3xl flex flex-col gap-2">
+            <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                 <p className="text-xl font-bold relative z-20 mt-2 text-white">
                     Software Engineer <span className="text-neutral-300 font-normal">@Volvo and Eicher Commercial Vehicles</span>
                 </p>
@@ -93,7 +93,7 @@ const Experience = () => {
         {
           title: "March 2022 - Feb 2023",
           content: (
-            <CardSpotlight className="h-80 w-full rounded-3xl flex flex-col gap-2">
+            <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                 <p className="text-xl font-bold relative z-20 mt-2 text-white">
                     Software Engineer Intern <span className="text-neutral-300 font-normal">@Volvo and Eicher Commercial Vehicles</span>
                 </p>
@@ -133,7 +133,7 @@ const Experience = () => {
         {
             title: "March 2022 - Feb 2023",
             content: (
-              <CardSpotlight className="h-72 w-full rounded-3xl flex flex-col gap-2">
+              <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                   <p className="text-xl font-bold relative z-20 mt-2 text-white">
                       Frontend Intern <span className="text-neutral-300 font-normal">@Artbeat Entertainment</span>
                   </p>
@@ -168,7 +168,7 @@ const Experience = () => {
           },
       ];
   return (
-    <div className="flex flex-col justify-start items-start gap-2 max-w-3xl mx-auto">
+    <div className="flex flex-col justify-start items-start gap-2 w-full md:max-w-2xl lg:max-w-3xl mx-auto px-6 md:px-0">
         <h1 className="text-3xl font-bold tracking-wider text-[#1dd79b]">Experience</h1>
         <div className="relative w-full overflow-clip">
             <Timeline data={data} />

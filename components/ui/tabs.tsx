@@ -34,8 +34,6 @@ export const Tabs = ({
     setActive(newTabs[0]);
   };
 
-  const [hovering, setHovering] = useState(false);
-
   return (
     <>
       <div
@@ -50,8 +48,6 @@ export const Tabs = ({
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
             className={cn("relative px-4 py-2 rounded-full w-full text-center", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
@@ -110,7 +106,9 @@ export const FadeInDiv = ({
           animate={{
             y: tab.value === active.value ? [0, 40, 0] : 0,
           }}
-          className={cn("w-full h-full absolute top-0 left-0", className)}
+          className={cn("w-full h-full bg-[#111614] absolute top-0 left-0 rounded-2xl", 
+            className
+          )}
         >
           {tab.content}
         </motion.div>

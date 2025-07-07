@@ -4,45 +4,46 @@ import { Tabs } from "@/components/ui/tabs";
 
 export const personalProjects = [
     {
-      title: "Stripe",
+      title: "thPilot",
       description:
         "A technology company that builds",
       link: "https://stripe.com",
       tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
     },
     {
-      title: "Netflix",
+      title: "SocketTalk",
       description:
         "A streaming service that offers a wide variet.",
-      link: "https://netflix.com",
+      link: "https://github.com/thecurioussailor/socket-talk",
       tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
     },
     {
-      title: "Google",
+      title: "Probo",
       description:
         "A multinational technology company that specializes in",
-      link: "https://google.com",
+      link: "https://github.com/thecurioussailor/probo-v2",
       tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
     },
     {
-      title: "Meta",
+      title: "Metaverse",
       description:
         "A technology company that focuses on ",
-      link: "https://meta.com",
+      link: "https://github.com/thecurioussailor/metaverse-2d",
       tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
     },
     {
-      title: "Amazon",
+      title: "t-Sizzle",
       description:
         "A multinational technology company focusing on e-commerce,",
-      link: "https://amazon.com",
+      link: "https://github.com/thecurioussailor/tsizzle",
       tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
     },
     {
-      title: "Microsoft",
+      title: "Thanos",
       description:
-        "A multinational technology company that .",
-      link: "https://microsoft.com",
+        "A Solana wallet that allows you to create your own wallet and send and receive SOL.",
+      link: "https://github.com/thecurioussailor/thanos",
+      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
     },
   ];
 
@@ -60,35 +61,7 @@ export const personalProjects = [
           "A technology company that builds",
         link: "https://ice-skating.vercel.app/",
         tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-      },
-      {
-        title: "Dice Game",
-        description:
-          "A technology company that builds",
-        link: "https://dicegame.com",
-        tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-      },
-      {
-        title: "Online Store",
-        description:
-          "A technology company that builds",
-        link: "https://onlinestore.com",
-        tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-      },
-      {
-        title: "Portfolio",
-        description:
-          "A technology company that builds",
-        link: "https://portfolio.com",
-        tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-      },
-      {
-        title: "HeroCare",
-        description:
-          "A technology company that builds",
-        link: "https://herocare.com",
-        tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-      },
+      }
   ];
   const tabs = [
     {
@@ -114,9 +87,9 @@ export const personalProjects = [
   
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-start items-start w-3xl">
+    <div className="flex flex-col justify-start items-start w-full md:min-w-2xl lg:min-w-3xl px-6 md:px-0 ">
         <h1 className="text-4xl font-bold text-[#1dd79b]">Projects</h1>
-        <div className="h-[20rem] md:h-[30rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-10">
+        <div className="h-[73rem] md:h-[37rem] lg:h-[29rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-10">
             <Tabs tabs={tabs} />
         </div>
     </div>

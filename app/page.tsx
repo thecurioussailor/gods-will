@@ -20,7 +20,7 @@ export default function Home() {
       <div className="pointer-events-none absolute inset-0 bg-[#161B19] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       
       {/* Your content */}
-      <div className="relative z-10 flex flex-col items-center justify-center pt-32 gap-10">
+      <div className="relative z-10 flex flex-col items-center justify-center pt-16 md:pt-32 gap-10">
         <Hero />
         <Experience />
         <Projects />

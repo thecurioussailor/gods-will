@@ -3,7 +3,7 @@ import { IconBrandLinkedin } from "@tabler/icons-react"
 
 const Footer = () => {
   return (
-    <div className="flex w-3xl justify-between items-center py-10 border-t border-zinc-800">
+    <div className="flex md:min-w-2xl lg:w-3xl justify-between items-center py-10 border-t border-zinc-800">
         <h1 className="text-[#1dd79b] font-semibold">Ashutosh Sagar</h1>
         <div className="flex justify-start items-start gap-4">
             <h1 className="text-sm text-[#1dd79b]"><IconBrandGithub/></h1>

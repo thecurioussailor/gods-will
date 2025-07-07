@@ -26,6 +26,7 @@ export const HoverEffect = ({
       {items.map((item, idx) => (
         <a
           href={item?.link}
+          target="_blank"
           key={item?.link}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -34,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-white/20 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-[#1dd79b]/10 dark:bg-slate-800/[0.8] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{ 
@@ -49,13 +50,16 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card className="bg-[#121212] border-zinc-800">
-            <div className="flex flex-row gap-2 justify-between items-center">
-              <CardTitle className="text-xl">{item.title}</CardTitle>
+            <div 
+
+            className={cn("flex flex-row gap-2 justify-between items-center")}>
+              <CardTitle className={cn("text-xl animate-all duration-300", hoveredIndex === idx && "text-[#1dd79b]")}>{item.title}</CardTitle>
               <button
                 onClick={() => {}}
-                className="flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+                
+                className={cn("flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 text-black dark:bg-neutral-800", hoveredIndex === idx && "bg-[#1dd79b]")}
               >
-                <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover:-rotate-45 dark:text-neutral-400" />
+                <IconArrowRight className="h-5 w-5 transition-transform duration-500 group-hover:-rotate-45 dark:text-neutral-400" />
               </button>
             </div>
             <CardDescription>{item.description}</CardDescription>
@@ -72,6 +76,7 @@ export const Card = ({
   className?: string;
   children: React.ReactNode;
 }) => {
+  
   return (
     <div
       className={cn(
