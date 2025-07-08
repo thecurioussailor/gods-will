@@ -3,66 +3,76 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Tabs } from "@/components/ui/tabs";
 
 export const personalProjects = [
-    {
-      title: "thPilot",
-      description:
-        "A technology company that builds",
-      link: "https://stripe.com",
-      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    },
-    {
-      title: "SocketTalk",
-      description:
-        "A streaming service that offers a wide variet.",
-      link: "https://github.com/thecurioussailor/socket-talk",
-      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    },
-    {
-      title: "Probo",
-      description:
-        "A multinational technology company that specializes in",
-      link: "https://github.com/thecurioussailor/probo-v2",
-      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    },
-    {
-      title: "Metaverse",
-      description:
-        "A technology company that focuses on ",
-      link: "https://github.com/thecurioussailor/metaverse-2d",
-      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    },
-    {
-      title: "t-Sizzle",
-      description:
-        "A multinational technology company focusing on e-commerce,",
-      link: "https://github.com/thecurioussailor/tsizzle",
-      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    },
-    {
-      title: "Thanos",
-      description:
-        "A Solana wallet that allows you to create your own wallet and send and receive SOL.",
-      link: "https://github.com/thecurioussailor/thanos",
-      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    },
-  ];
+  {
+    title: "thPilot",
+    shortDescription: "SaaS to monetize Telegram channels.",
+    description:
+      "An ongoing SaaS project for Telegram channel monetization. Influencers can monetize their Telegram channels by allowing followers to pay and join through a unique subscription link. Includes channel analytics and management features.",
+    link: "https://stripe.com",
+    tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "SocketTalk",
+    shortDescription: "Full-stack real-time chat app.",
+    description:
+      "A full-stack real-time chat application using React, Express, WebSockets, Prisma, and PostgreSQL. Includes features like friend requests, real-time messaging, Redis pub/sub, Redis queues, and is built with TypeScript.",
+    link: "https://github.com/thecurioussailor/socket-talk",
+    tags: ["React", "Tailwind", "Node.js", "Express", "Prisma", "PostgreSQL", "Redis", "TypeScript"],
+  },
+  {
+    title: "Probo",
+    shortDescription: "Opinion trading backend system.",
+    description:
+      "A backend-only project simulating a prediction market where users can trade on opinions. Built with Express, WebSockets, Prisma, Redis pub/sub, Redis queues, and written in TypeScript.",
+    link: "https://github.com/thecurioussailor/probo-v2",
+    tags: ["Express", "WebSocket", "Prisma", "Redis", "TypeScript"],
+  },
+  {
+    title: "Metaverse",
+    shortDescription: "2D metaverse multiplayer backend.",
+    description:
+      "Backend architecture for a 2D metaverse game. Users join rooms with avatars and interact in real-time. Built with Express, WebSockets, and TypeScript with test coverage.",
+    link: "https://github.com/thecurioussailor/metaverse-2d",
+    tags: ["Express", "WebSocket", "TypeScript", "Testing"],
+  },
+  {
+    title: "t-Sizzle",
+    shortDescription: "T-shirt e-commerce web app.",
+    description:
+      "An e-commerce full-stack project built with React and Express for selling t-shirts online. Includes product listing, cart, and order management.",
+    link: "https://github.com/thecurioussailor/tsizzle",
+    tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "Thanos",
+    shortDescription: "Solana wallet manager app.",
+    description:
+      "A Solana-based wallet app built in Next.js that allows users to generate, delete, and manage wallets for sending/receiving SOL.",
+    link: "https://github.com/thecurioussailor/thanos",
+    tags: ["Next.js", "Solana", "Tailwind", "TypeScript"],
+  },
+];
 
-  export const clientProjects = [
-    {
-      title: "Tinywallet",
-      description:
-        "A technology company that builds",
-      link: "https://tinywallet.in",
-      tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-    },
-    {
-        title: "Ice Skating",
-        description:
-          "A technology company that builds",
-        link: "https://ice-skating.vercel.app/",
-        tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-      }
-  ];
+export const clientProjects = [
+  {
+    title: "Tinywallet",
+    shortDescription: "SaaS for selling, monetizing, linking.",
+    description:
+      "A full-stack SaaS platform developed from scratch that enables Telegram channel monetization, digital product selling, and link shortening. Built with payment gateway integration via Cashfree.",
+    link: "https://tinywallet.in",
+    tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "Ice Skating",
+    shortDescription: "Client landing page from Figma.",
+    description:
+      "A pixel-perfect landing page developed in Next.js based on Figma designs provided by the client.",
+    link: "https://ice-skating.vercel.app/",
+    tags: ["Next.js", "Tailwind", "Responsive Design"],
+  },
+];
+
+
   const tabs = [
     {
       title: "Personal",

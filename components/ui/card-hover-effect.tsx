@@ -9,6 +9,7 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
+    shortDescription: string,
     description: string;
     link: string;
   }[];
@@ -62,7 +63,7 @@ export const HoverEffect = ({
                 <IconArrowRight className="h-5 w-5 transition-transform duration-500 group-hover:-rotate-45 dark:text-neutral-400" />
               </button>
             </div>
-            <CardDescription>{item.description}</CardDescription>
+            <CardDescription>{item.shortDescription}</CardDescription>
           </Card>
         </a>
       ))}

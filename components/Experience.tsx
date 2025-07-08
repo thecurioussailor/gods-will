@@ -1,8 +1,7 @@
 import { Timeline } from "@/components/ui/timeline";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { Box } from "lucide-react";
 import { CardSpotlight } from "@/components/ui/card-spotlight";
-
+import Link from "next/link";
 
 const Experience = () => {
     const data = [
@@ -11,7 +10,7 @@ const Experience = () => {
           content: (
             <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                 <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                    Full Stack Developer <span className="text-neutral-300 font-normal">@Ionfirm Corporation</span>
+                    Full Stack Developer <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://ionfirm.com" target="_blank">@Ionfirm</Link></span>
                 </p>
                 <p className="text-neutral-400 z-20 text-sm">
                     Current
@@ -55,7 +54,7 @@ const Experience = () => {
           content: (
             <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                 <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                    Software Engineer <span className="text-neutral-300 font-normal">@Volvo and Eicher Commercial Vehicles</span>
+                    Software Engineer <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://vecv.in" target="_blank">@Volvo and Eicher Commercial Vehicles</Link></span>
                 </p>
                 <p className="text-neutral-400 z-20 text-sm">
                     Full Time
@@ -95,7 +94,7 @@ const Experience = () => {
           content: (
             <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                 <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                    Software Engineer Intern <span className="text-neutral-300 font-normal">@Volvo and Eicher Commercial Vehicles</span>
+                    Software Engineer Intern <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://vecv.in" target="_blank">@Volvo and Eicher Commercial Vehicles</Link></span>
                 </p>
                 <p className="text-neutral-400 z-20 text-sm">
                     Internship
@@ -135,7 +134,7 @@ const Experience = () => {
             content: (
               <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                   <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                      Frontend Intern <span className="text-neutral-300 font-normal">@Artbeat Entertainment</span>
+                      Frontend Intern <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://artbeatentertainment.com" target="_blank">@Artbeat Entertainment</Link></span>
                   </p>
                   <p className="text-neutral-400 z-20 text-sm">
                       Internship
