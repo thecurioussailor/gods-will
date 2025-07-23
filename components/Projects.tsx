@@ -4,14 +4,6 @@ import { Tabs } from "@/components/ui/tabs";
 
 export const personalProjects = [
   {
-    title: "thPilot",
-    shortDescription: "SaaS to monetize Telegram channels.",
-    description:
-      "An ongoing SaaS project for Telegram channel monetization. Influencers can monetize their Telegram channels by allowing followers to pay and join through a unique subscription link. Includes channel analytics and management features.",
-    link: "https://stripe.com",
-    tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
-  },
-  {
     title: "SocketTalk",
     shortDescription: "Full-stack real-time chat app.",
     description:
@@ -51,6 +43,14 @@ export const personalProjects = [
     link: "https://github.com/thecurioussailor/thanos",
     tags: ["Next.js", "Solana", "Tailwind", "TypeScript"],
   },
+  {
+    title: "thPilot",
+    shortDescription: "SaaS to monetize Telegram channels.",
+    description:
+      "An ongoing SaaS project for Telegram channel monetization. Influencers can monetize their Telegram channels by allowing followers to pay and join through a unique subscription link. Includes channel analytics and management features.",
+    link: "https://thPilot.xyz",
+    tags: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
+  }
 ];
 
 export const clientProjects = [
