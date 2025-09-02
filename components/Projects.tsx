@@ -55,6 +55,22 @@ export const personalProjects = [
 
 export const clientProjects = [
   {
+    title: "Coinbuzz",
+    shortDescription: "Coinbase Dashboard",
+    description:
+      "A full-stack Coinbase Clone developed from scratch.",
+    link: "https://coinbuzz.vercel.app/",
+    tags: ["Next.js", "Tailwind"],
+  },
+  {
+    title: "Command Hive",
+    shortDescription: "Replit for MCP Servers",
+    description:
+      "A full-stack SaaS platform developed from scratch that enables MCP Services.",
+    link: "https://cammand-hive.vercel.app/",
+    tags: ["Next.js", "Tailwind"],
+  },
+  {
     title: "Tinywallet",
     shortDescription: "SaaS for selling, monetizing, linking.",
     description:
