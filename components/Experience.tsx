@@ -167,7 +167,7 @@ const Experience = () => {
           },
       ];
   return (
-    <div className="flex flex-col justify-start items-start gap-2 w-full md:max-w-2xl lg:max-w-3xl mx-auto px-6 md:px-0">
+    <div className="flex flex-col justify-start items-start gap-2 w-full md:max-w-2xl lg:max-w-5xl mx-auto px-6 md:px-0">
         <h1 className="text-3xl font-bold tracking-wider text-[#1dd79b]">Experience</h1>
         <div className="relative w-full overflow-clip">
             <Timeline data={data} />

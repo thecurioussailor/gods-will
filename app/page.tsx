@@ -4,10 +4,11 @@ import Blogs from "@/components/Blogs";
 import Experience from "@/components/Experience";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
+import Projects2 from "@/components/Projects2";
 
 export default function Home() {
   return (
-<div className="relative min-h-screen bg-[#161B19]">
+<div className="relative min-h-screen bg-black">
       Grid Background
       <div
         className={cn(
@@ -23,7 +24,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center justify-center pt-16 md:pt-32 gap-10">
         <Hero />
         <Experience />
-        <Projects />
+        <Projects2 />
         <Footer />
       </div>
     </div>
