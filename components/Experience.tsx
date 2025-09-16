@@ -10,7 +10,7 @@ const Experience = () => {
           content: (
             <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
                 <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                    Full Stack Developer <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://ionfirm.com" target="_blank">@Ionfirm</Link></span>
+                    Full Stack Developer <span className="text-neutral-300 font-normal hover:text-purple-400 transition-all duration-300"><Link href="https://ionfirm.com" target="_blank">@Ionfirm</Link></span>
                 </p>
                 <p className="text-neutral-400 z-20 text-sm">
                     Current
@@ -21,28 +21,28 @@ const Experience = () => {
                     </p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4">
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
+                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                         <span className="relative z-20">Next.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
+                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                         <span className="relative z-20">Typescript</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
+                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                         <span className="relative z-20">Node.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
+                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                         <span className="relative z-20">React.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
+                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                         <span className="relative z-20">AWS</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
+                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
                         <span className="relative z-20">DevOps</span>
                     </button>
                 </div>
@@ -168,7 +168,7 @@ const Experience = () => {
       ];
   return (
     <div className="flex flex-col justify-start items-start gap-2 w-full md:max-w-2xl lg:max-w-5xl mx-auto px-6 md:px-0">
-        <h1 className="text-3xl font-bold tracking-wider text-[#1dd79b]">Experience</h1>
+        <h1 className="text-3xl font-bold tracking-wider text-purple-400">Experience</h1>
         <div className="relative w-full overflow-clip">
             <Timeline data={data} />
         </div>
