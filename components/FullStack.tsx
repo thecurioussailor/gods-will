@@ -12,7 +12,7 @@ const items: ChromaItem[] = [
         "Swap on Solana via Jupiter API",
         "MPC + TSS private key management with 3 servers for secure signing",
       ],
-      handle: 'Rust',
+      handle: 'Rust, Next.js',
       demoUrl: "https://bonfire.ashutoshsagar.com/",
       githubUrl: "https://github.com/thecurioussailor/bonfire", // replace with actual repo
       url: "",
@@ -33,7 +33,7 @@ const items: ChromaItem[] = [
         "Real-time order book and ticker updates via WebSockets",
         "Simulator with bot users to mimic real trading environment",
       ],
-      handle: 'Rust',
+      handle: 'Rust, Next.js',
       demoUrl: "https://trueman.ashutoshsagar.com/",
       githubUrl: "https://github.com/thecurioussailor/trueman2",
       url: "https://github.com/thecurioussailor/trueman2",
@@ -52,7 +52,7 @@ const items: ChromaItem[] = [
           "User profile creation and customization",
           "Persistent friend and chat data stored in database",
         ],
-        handle: 'Node.js',
+        handle: 'Node.js, React.js',
         demoUrl: "", // Add demo link if you deploy it
         githubUrl: "https://github.com/thecurioussailor/socket-talk",
         url: "https://github.com/thecurioussailor/socket-talk",
@@ -94,9 +94,10 @@ const items: ChromaItem[] = [
           "Persistent market and trade data in PostgreSQL",
           "Backend-only implementation (frontend pending)",
         ],
+        handle: 'Node.js',
         demoUrl: "", // optional, if deployed
-        githubUrl: "https://github.com/thecurioussailor/probo-backend", // update if different
-        url: "https://github.com/thecurioussailor/probo-backend",
+        githubUrl: "https://github.com/thecurioussailor/probo-v2", // update if different
+        url: "https://github.com/thecurioussailor/probo-v2",
         borderColor: "#06B6D4",
         gradient: "linear-gradient(220deg, #06B6D4, #000)",
       },

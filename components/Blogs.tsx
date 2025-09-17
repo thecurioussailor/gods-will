@@ -36,21 +36,21 @@ const Blogs = () => {
     },
   ];
 
-  const platforms = [
-    { key: 'all', label: 'All Posts', count: blogPosts.length },
-    { key: 'medium', label: 'Medium', count: blogPosts.filter(post => post.platform === 'medium').length },
-    { key: 'twitter', label: 'Twitter', count: blogPosts.filter(post => post.platform === 'twitter').length },
-  ];
+  // const platforms = [
+  //   { key: 'all', label: 'All Posts', count: blogPosts.length },
+  //   { key: 'medium', label: 'Medium', count: blogPosts.filter(post => post.platform === 'medium').length },
+  //   { key: 'twitter', label: 'Twitter', count: blogPosts.filter(post => post.platform === 'twitter').length },
+  // ];
 
-  const filteredPosts = selectedPlatform === 'all' 
-    ? blogPosts 
-    : blogPosts.filter(post => post.platform === selectedPlatform);
+  // const filteredPosts = selectedPlatform === 'all' 
+  //   ? blogPosts 
+  //   : blogPosts.filter(post => post.platform === selectedPlatform);
 
   return (
     <div className="flex flex-col justify-start items-start w-full md:max-w-2xl lg:max-w-5xl px-6 md:px-0 gap-10">
       <h1 className="text-3xl font-bold tracking-wider text-purple-400">Blogs</h1>
       {/* Platform Filter */}
-      <div className="flex flex-wrap gap-2 w-full">
+      {/* <div className="flex flex-wrap gap-2 w-full">
         {platforms.map((platform) => (
           <button
             key={platform.key}
@@ -64,11 +64,11 @@ const Blogs = () => {
             {platform.label} ({platform.count})
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* Blog Posts Grid */}
       <div className="grid grid-cols-1 gap-6 w-full">
-        {filteredPosts.map((post) => (
+        {blogPosts.map((post) => (
             <div key={post.id} className="relative h-full flex flex-col gap-4 p-6 bg-black rounded-3xl">
               <GlowingEffect
                 spread={30}
@@ -136,7 +136,7 @@ const Blogs = () => {
       </div>
 
       {/* Empty State */}
-      {filteredPosts.length === 0 && (
+      {/* {filteredPosts.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12 text-center">
           <div className="text-6xl mb-4">🌌</div>
           <h3 className="text-xl font-semibold text-gray-300 mb-2">No posts found</h3>
@@ -144,7 +144,7 @@ const Blogs = () => {
         </div>
       )}
 
-      {/* Call to Action */}
+      Call to Action
       <div className="w-full text-center py-8">
         <p className="text-gray-400 mb-4">Want to stay updated with my latest thoughts?</p>
         <div className="flex flex-wrap justify-center gap-4">
@@ -165,7 +165,7 @@ const Blogs = () => {
             <span>Follow on Twitter</span>
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
