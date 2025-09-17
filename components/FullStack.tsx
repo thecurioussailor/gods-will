@@ -41,7 +41,7 @@ const items: ChromaItem[] = [
       gradient: "linear-gradient(225deg, #8B5CF6, #000)",
     },
     {
-        image: '/metaverse.jpg',
+        image: '/chat.jpg',
         title: 'SocketTalk',
         subtitle: "Web-based Chat Application",
         description: "SocketTalk is a web-based chat platform where users can connect, send and accept friend requests, and chat in real time once connected. The application uses WebSockets for seamless, live communication. Users can also create and customize their profiles.",
@@ -60,42 +60,45 @@ const items: ChromaItem[] = [
         gradient: "linear-gradient(210deg, #10B981, #000)",
       },
       {
-        image: '/metaverse.jpg',
-        title: 'Metaverse 2D',
-        subtitle: "Web-based Chat Application",
-        description: "Metaverse 2D is a web-based chat platform where users can connect, send and accept friend requests, and chat in real time once connected. The application uses WebSockets for seamless, live communication. Users can also create and customize their profiles.",
-        technologies: ["Next.js", "Node.js", "WebSocket", "PostgreSQL", "Redis"],
+        image: "/metaverse.jpg",
+        title: "Metaverse 2D Backend",
+        subtitle: "Real-time Multiplayer Game Backend",
+        description:
+          "Backend infrastructure for a 2D Metaverse-style multiplayer game. Users can create avatars and interact inside an arena with real-time movement and interactions. Built to handle live updates using WebSockets and Redis for fast state management. Currently backend-only with no frontend client.",
+        technologies: ["Node.js", "WebSocket", "Redis", "PostgreSQL"],
         features: [
-          "Send and accept friend requests",
-          "Real-time chat using WebSockets",
-          "User profile creation and customization",
-          "Persistent friend and chat data stored in database",
+          "User avatar creation",
+          "Arena for player movement & interactions",
+          "Real-time communication via WebSockets",
+          "Redis for fast in-memory state sync",
+          "Backend-only implementation (frontend pending)",
         ],
         handle: 'Node.js',
-        demoUrl: "", // Add demo link if you deploy it
-        githubUrl: "https://github.com/thecurioussailor/socket-talk",
-        url: "https://github.com/thecurioussailor/socket-talk",
-        borderColor: "#4F46E5",
-        gradient: "linear-gradient(210deg, #10B981, #000)",
+        demoUrl: "", // optional, if deployed
+        githubUrl: "https://github.com/thecurioussailor/metaverse-2d",
+        url: "https://github.com/thecurioussailor/metaverse-2d",
+        borderColor: "#F59E0B",
+        gradient: "linear-gradient(200deg, #F59E0B, #000)",
       },
       {
-        image: '/metaverse.jpg',
-        title: 'Probo - Opinion Market',
-        subtitle: "Web-based Chat Application",
-        description: "Probo is a web-based opinion market platform where users can create and trade on opinion markets. The application uses WebSockets for seamless, live communication. Users can also create and customize their profiles.",
-        technologies: ["Next.js", "Node.js", "WebSocket", "PostgreSQL", "Redis"],
+        image: '/probo1.jpg',
+        title: "Probo Backend",
+        subtitle: "Opinion Trading Platform Backend",
+        description:
+          "Backend service for an opinion trading platform inspired by Probo. Users can trade opinions in 'Yes' or 'No' markets and win if their prediction is correct. Features a real-time order book powered by WebSockets and Redis, ensuring fast updates and scalability. PostgreSQL is used for persistent storage.",
+        technologies: ["Node.js", "WebSocket", "Redis", "PostgreSQL"],
         features: [
-          "Send and accept friend requests",
-          "Real-time chat using WebSockets",
-          "User profile creation and customization",
-          "Persistent friend and chat data stored in database",
+          "Opinion trading with Yes/No markets",
+          "Real-time order book updates via WebSockets",
+          "Scalable architecture with Redis",
+          "Persistent market and trade data in PostgreSQL",
+          "Backend-only implementation (frontend pending)",
         ],
-        handle: 'Node.js',
-        demoUrl: "", // Add demo link if you deploy it
-        githubUrl: "https://github.com/thecurioussailor/socket-talk",
-        url: "https://github.com/thecurioussailor/socket-talk",
-        borderColor: "#4F46E5",
-        gradient: "linear-gradient(210deg, #10B981, #000)",
+        demoUrl: "", // optional, if deployed
+        githubUrl: "https://github.com/thecurioussailor/probo-backend", // update if different
+        url: "https://github.com/thecurioussailor/probo-backend",
+        borderColor: "#06B6D4",
+        gradient: "linear-gradient(220deg, #06B6D4, #000)",
       },
   ];
 const FullStack = () => {
