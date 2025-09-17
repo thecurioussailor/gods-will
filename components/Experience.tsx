@@ -1,168 +1,242 @@
 import { Timeline } from "@/components/ui/timeline";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { CardSpotlight } from "@/components/ui/card-spotlight";
 import Link from "next/link";
 
 const Experience = () => {
     const data = [
         {
-          title: "Feb 2024 - Present",
-          content: (
-            <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
-                <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                    Full Stack Developer <span className="text-neutral-300 font-normal hover:text-purple-400 transition-all duration-300"><Link href="https://ionfirm.com" target="_blank">@Ionfirm</Link></span>
-                </p>
-                <p className="text-neutral-400 z-20 text-sm">
-                    Current
-                </p>
-                <div className="text-neutral-200 relative z-20">
-                    <p className="text-neutral-200 relative z-20">
-                    I lead full-stack development for diverse client projects and internal products, from conception to deployment.
-                    </p>
-                </div>
-                <div className="flex flex-wrap gap-2 pt-4">
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
-                        <span className="relative z-20">Next.js</span>
-                    </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
-                        <span className="relative z-20">Typescript</span>
-                    </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
-                        <span className="relative z-20">Node.js</span>
-                    </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
-                        <span className="relative z-20">React.js</span>
-                    </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
-                        <span className="relative z-20">AWS</span>
-                    </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-purple-500/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
-                        <span className="relative z-20">DevOps</span>
-                    </button>
-                </div>
-            </CardSpotlight>
-          ),
-        },
+            title: "Jul 2025 - Present",
+            content: (
+              <div className="relative h-full flex flex-col gap-4 p-10 bg-black rounded-3xl">
+                <GlowingEffect
+                  spread={30}
+                  glow={true}
+                  disabled={false}
+                  proximity={64}
+                  inactiveZone={0.01}
+                />
+                  <p className="text-xl font-bold relative z-20 text-white">
+                      Solana Fellowship <span className="text-neutral-300 font-normal hover:text-purple-400 transition-all duration-300"><Link href="https://www.superdev.fun/" target="_blank">@Superdev Fellowship by SuperteamInd</Link></span>
+                  </p>
+                  <div className="text-neutral-200 relative z-20">
+                      <ul className="text-neutral-200 relative z-20 list-disc pl-4 space-y-2">
+                        <li>
+                            Fellowship by SuperteamIND & Kirat focused on Solana + Rust.
+                        </li>
+                        <li>
+                            Explored advanced concepts: indexing via Yellowstone Geyser, MPC/TSS signing, custody infra, Anchor vs Pinocchio.
+                        </li>
+                      </ul>
+                  </div>
+                  <div className="flex flex-wrap gap-2 pt-4">
+                      <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                          <span className="relative z-20">Rust</span>
+                      </button>
+                      <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                          <span className="relative z-20">Solana</span>
+                      </button>
+                      <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                          <span className="relative z-20">Anchor</span>
+                      </button>
+                      <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                          <span className="relative z-20">Pinnochio</span>
+                      </button>
+                  </div>
+              </div>
+            ),
+          },
         {
-          title: "March 2023 - Jan 2024",
+          title: "Feb 2024 - Jun 2025",
           content: (
-            <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
-                <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                    Software Engineer <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://vecv.in" target="_blank">@Volvo and Eicher Commercial Vehicles</Link></span>
+            <div className="relative h-full flex flex-col gap-4 p-10 bg-black rounded-3xl">
+              <GlowingEffect
+                spread={30}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+                <p className="text-xl font-bold relative z-20 text-white">
+                    Full Stack Developer <span className="text-neutral-300 font-normal hover:text-purple-400 transition-all duration-300"><Link href="https://ionfirm.com" target="_blank">@Ionfirm</Link></span>
                 </p>
                 <p className="text-neutral-400 z-20 text-sm">
                     Full Time
                 </p>
                 <div className="text-neutral-200 relative z-20">
-                    <p className="text-neutral-200 relative z-20">
-                    Engineered backend services in Spring Boot and frontend in React for business-critical systems. Implemented DevOps practices and managed cloud deployments on AWS.
-                    </p>
+                    <ul className="text-neutral-200 relative z-20 list-disc pl-4 space-y-2">
+                      <li>
+                      Led full-stack development of client projects & internal SaaS tools.
+                      </li>
+                      <li>
+                      Architected & deployed scalable apps with Next.js, Node.js, PostgreSQL, AWS.
+                      </li>
+                      <li>
+                      Owned product lifecycle: from design → backend APIs → frontend UI → cloud deployment.
+                      </li>
+                    </ul>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4">
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
-                        <span className="relative z-20">Java</span>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Next.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
-                        <span className="relative z-20">Spring Boot</span>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Typescript</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
-                        <span className="relative z-20">React</span>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Node.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
-                        <span className="relative z-20">Microservices</span>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">React.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">AWS</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">DevOps</span>
                     </button>
                 </div>
-            </CardSpotlight>
+            </div>
+          ),
+        },
+        {
+          title: "March 2023 - Jan 2024",
+          content: (
+            <div className="relative h-full flex flex-col gap-4 p-10 bg-black rounded-3xl">
+              <GlowingEffect
+                spread={30}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+                <p className="text-xl font-bold relative z-20 text-white">
+                    Software Engineer <span className="text-neutral-300 font-normal hover:underline hover:text-purple-400 transition-all duration-300"><Link href="https://vecv.in" target="_blank">@Volvo and Eicher Commercial Vehicles</Link></span>
+                </p>
+                <p className="text-neutral-400 z-20 text-sm">
+                    Full Time
+                </p>
+                <div className="text-neutral-200 relative z-20">
+                    <ul className="text-neutral-200 relative z-20 list-disc pl-4 space-y-2">
+                      <li>
+                        Built business-critical backend services in Spring Boot.
+                      </li>
+                      <li>
+                        Developed React dashboards to visualize manufacturing & logistics data.
+                      </li>
+                      <li>
+                        Automated CI/CD pipelines & deployed on AWS.
+                      </li>
+                    </ul>
+                </div>
+                <div className="flex flex-wrap gap-2 pt-4">
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Java</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Spring Boot</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">React</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Microservices</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">DevOps</span>
+                    </button>
+                </div>
+            </div>
           ),
         },
         {
           title: "March 2022 - Feb 2023",
           content: (
-            <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
-                <p className="text-xl font-bold relative z-20 mt-2 text-white">
+            <div className="relative h-full flex flex-col gap-4 p-10 bg-black rounded-3xl">
+              <GlowingEffect
+                spread={30}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+                <p className="text-xl font-bold relative z-20 text-white">
                     Software Engineer Intern <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://vecv.in" target="_blank">@Volvo and Eicher Commercial Vehicles</Link></span>
                 </p>
                 <p className="text-neutral-400 z-20 text-sm">
                     Internship
                 </p>
                 <div className="text-neutral-200 relative z-20">
-                    <p className="text-neutral-200 relative z-20">
-                    Contributed to full-stack development using Spring Boot and React, and participated in API testing to support internal tools and services.
-                    </p>
+                    <ul className="text-neutral-200 relative z-20 list-disc pl-4 space-y-2">
+                      <li>
+                        Contributed to internal tooling using React + Spring Boot.
+                      </li>
+                      <li>
+                        Enhanced API reliability through automated testing & monitoring.
+                      </li>
+                    </ul>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4">
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">Java</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">Spring Boot</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">React</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">Microservices</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">DevOps</span>
                     </button>
                 </div>
-            </CardSpotlight>
+            </div>
           ),
         },
         {
             title: "March 2022 - Feb 2023",
             content: (
-              <CardSpotlight className="md:h-96 lg:h-80 w-full rounded-3xl flex flex-col gap-2">
-                  <p className="text-xl font-bold relative z-20 mt-2 text-white">
+              <div className="relative h-full flex flex-col gap-4 p-10 bg-black rounded-3xl">
+                <GlowingEffect
+                  spread={30}
+                  glow={true}
+                  disabled={false}
+                  proximity={64}
+                  inactiveZone={0.01}
+                />
+                  <p className="text-xl font-bold relative z-20 text-white">
                       Frontend Intern <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://artbeatentertainment.com" target="_blank">@Artbeat Entertainment</Link></span>
                   </p>
                   <p className="text-neutral-400 z-20 text-sm">
                       Internship
                   </p>
                   <div className="text-neutral-200 relative z-20">
-                      <p className="text-neutral-200 relative z-20">
-                      Translated Figma designs into a fully functional, animated website with a focus on responsiveness and user interaction.
-                      </p>
+                      <ul className="text-neutral-200 relative z-20 list-disc pl-4 space-y-2">
+                      <li>
+                        Converted Figma designs into pixel-perfect responsive websites.
+                      </li>
+                      <li>
+                      Implemented animations & interactions for better UX.
+                      </li>
+                    </ul>
                   </div>
                   <div className="flex flex-wrap gap-2 pt-4">
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">React.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">Tailwind CSS</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">Node.js</span>
                     </button>
-                    <button className="px-2 py-1 rounded-full relative bg-slate-900 text-white text-xs tracking-wider hover:shadow-2xs hover:shadow-white/[0.1] transition duration-200 border border-slate-700">
-                        <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
                         <span className="relative z-20">API Integration</span>
                     </button>
                 </div>
-              </CardSpotlight>
+              </div>
             ),
           },
       ];

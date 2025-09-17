@@ -1,9 +1,6 @@
 "use client"
 import { useState } from "react"
 import GooeyNav from './GooeyNav'
-import Frontend from "./Frontend";
-import Backend from "./Backend";
-import Blockchain from "./Blockchain";
 import Client from "./Client";
 import FullStack from "./FullStack";
 

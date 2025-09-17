@@ -15,7 +15,7 @@ const items: ChromaItem[] = [
         subtitle: 'Backend Developer',
         handle: 'Github',
         borderColor: '#4F46E5',
-        gradient: 'linear-gradient(145deg,#4F46E5,#000)',
+        gradient: 'linear-gradient(210deg, #10B981, #000)',
         url: 'https://github.com/thecurioussailor/metaverse-2d'
     },
     {
@@ -24,7 +24,7 @@ const items: ChromaItem[] = [
         subtitle: 'Backend Developer',
         handle: 'Github',
         borderColor: '#4F46E5',
-        gradient: 'linear-gradient(145deg,#4F46E5,#000)',
+        gradient: 'linear-gradient(165deg, #F59E0B, #000)',
         url: 'https://github.com/thecurioussailor/metaverse-2d'
     },
     {
@@ -33,7 +33,7 @@ const items: ChromaItem[] = [
         subtitle: 'Backend Developer',
         handle: 'Github',
         borderColor: '#4F46E5',
-        gradient: 'linear-gradient(145deg,#4F46E5,#000)',
+        gradient: 'linear-gradient(195deg, #EF4444, #000)',
         url: 'https://github.com/thecurioussailor/metaverse-2d'
     },
 
@@ -43,7 +43,7 @@ const items: ChromaItem[] = [
         subtitle: 'Backend Developer',
         handle: 'Github',
         borderColor: '#4F46E5',
-        gradient: 'linear-gradient(145deg,#4F46E5,#000)',
+        gradient: 'linear-gradient(225deg, #8B5CF6, #000)',
         url: 'https://github.com/thecurioussailor/metaverse-2d'
     },
   ];

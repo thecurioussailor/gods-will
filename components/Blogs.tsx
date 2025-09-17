@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
-import { CardSpotlight } from "@/components/ui/card-spotlight"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
 import { LuExternalLink, LuCalendar, LuClock, LuHeart } from "react-icons/lu"
 
@@ -25,99 +24,31 @@ const Blogs = () => {
   const blogPosts: BlogPost[] = [
     {
       id: 1,
-      title: "Building Scalable Web Applications with Next.js and TypeScript",
-      excerpt: "Learn how to create robust, type-safe web applications using Next.js 14 and TypeScript. This comprehensive guide covers everything from setup to deployment.",
+      title: "The Mysterious Case of Actix Web’s Json<T> Clone: A Lesson in Rust’s Deref Coercion",
+      excerpt: "Sometimes the best debugging sessions are the ones where you discover there was never a bug to begin with. This journey from confusion to understanding reinforced why I love Rust: the language is designed with such care that even “surprising” behavior usually turns out to be elegant design.",
       platform: 'medium',
-      url: 'https://medium.com/@yourusername/building-scalable-web-applications',
-      publishedDate: '2024-01-15',
-      readTime: '8 min read',
-      likes: 42,
-      tags: ['Next.js', 'TypeScript', 'Web Development'],
+      url: 'https://medium.com/@ashu.sagar111/the-mysterious-case-of-actix-webs-json-t-clone-a-lesson-in-rust-s-deref-coercion-8bf2cca15afa',
+      publishedDate: '2025-06-30',
+      readTime: '3 min read',
+      likes: 9,
+      tags: ['Rust', 'Debugging'],
       featured: true
     },
-    {
-      id: 2,
-      title: "The Future of Blockchain Development: A Developer's Perspective",
-      excerpt: "Exploring the latest trends in blockchain technology and how developers can prepare for the next wave of decentralized applications.",
-      platform: 'dev',
-      url: 'https://dev.to/yourusername/future-of-blockchain-development',
-      publishedDate: '2024-01-10',
-      readTime: '12 min read',
-      likes: 28,
-      tags: ['Blockchain', 'Web3', 'Development'],
-      featured: true
-    },
-    {
-      id: 3,
-      title: "Thread: 10 React Performance Tips Every Developer Should Know",
-      excerpt: "A Twitter thread covering essential React performance optimization techniques that can significantly improve your application's speed and user experience.",
-      platform: 'twitter',
-      url: 'https://twitter.com/yourusername/status/1234567890',
-      publishedDate: '2024-01-08',
-      readTime: '5 min read',
-      likes: 156,
-      tags: ['React', 'Performance', 'JavaScript']
-    },
-    {
-      id: 4,
-      title: "Getting Started with Rust for Web Development",
-      excerpt: "Why Rust is becoming increasingly popular for web development and how to get started with building web applications using this powerful language.",
-      platform: 'hashnode',
-      url: 'https://yourusername.hashnode.dev/getting-started-with-rust',
-      publishedDate: '2024-01-05',
-      readTime: '15 min read',
-      likes: 35,
-      tags: ['Rust', 'Web Development', 'Backend']
-    },
-    {
-      id: 5,
-      title: "Thread: My Journey from Java Developer to Full-Stack Engineer",
-      excerpt: "Sharing my experience transitioning from backend Java development to becoming a full-stack engineer, including the challenges and lessons learned.",
-      platform: 'twitter',
-      url: 'https://twitter.com/yourusername/status/1234567891',
-      publishedDate: '2024-01-03',
-      readTime: '7 min read',
-      likes: 89,
-      tags: ['Career', 'Java', 'Full-Stack']
-    }
   ];
 
   const platforms = [
     { key: 'all', label: 'All Posts', count: blogPosts.length },
     { key: 'medium', label: 'Medium', count: blogPosts.filter(post => post.platform === 'medium').length },
     { key: 'twitter', label: 'Twitter', count: blogPosts.filter(post => post.platform === 'twitter').length },
-    { key: 'dev', label: 'Dev.to', count: blogPosts.filter(post => post.platform === 'dev').length },
-    { key: 'hashnode', label: 'Hashnode', count: blogPosts.filter(post => post.platform === 'hashnode').length },
   ];
 
   const filteredPosts = selectedPlatform === 'all' 
     ? blogPosts 
     : blogPosts.filter(post => post.platform === selectedPlatform);
 
-  const getPlatformIcon = (platform: string) => {
-    switch (platform) {
-      case 'medium': return '📝';
-      case 'twitter': return '🐦';
-      case 'dev': return '💻';
-      case 'hashnode': return '📚';
-      default: return '📄';
-    }
-  };
-
-  const getPlatformColor = (platform: string) => {
-    switch (platform) {
-      case 'medium': return 'text-green-400';
-      case 'twitter': return 'text-blue-400';
-      case 'dev': return 'text-purple-400';
-      case 'hashnode': return 'text-indigo-400';
-      default: return 'text-gray-400';
-    }
-  };
-
   return (
     <div className="flex flex-col justify-start items-start w-full md:max-w-2xl lg:max-w-5xl px-6 md:px-0 gap-10">
-      <h1 className="text-4xl font-bold text-purple-400 cosmic-glow">Blogs & Thoughts</h1>
-      
+      <h1 className="text-3xl font-bold tracking-wider text-purple-400">Blogs</h1>
       {/* Platform Filter */}
       <div className="flex flex-wrap gap-2 w-full">
         {platforms.map((platform) => (
@@ -136,10 +67,9 @@ const Blogs = () => {
       </div>
 
       {/* Blog Posts Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+      <div className="grid grid-cols-1 gap-6 w-full">
         {filteredPosts.map((post) => (
-          <CardSpotlight key={post.id} className="h-full rounded-3xl">
-            <div className="relative h-full flex flex-col gap-4 p-6">
+            <div key={post.id} className="relative h-full flex flex-col gap-4 p-6 bg-black rounded-3xl">
               <GlowingEffect
                 spread={30}
                 glow={true}
@@ -147,19 +77,6 @@ const Blogs = () => {
                 proximity={64}
                 inactiveZone={0.01}
               />
-              
-              {/* Platform Badge */}
-              <div className="flex items-center justify-between">
-                <div className={`flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/50 border border-slate-600 ${getPlatformColor(post.platform)}`}>
-                  <span className="text-sm">{getPlatformIcon(post.platform)}</span>
-                  <span className="text-xs font-medium capitalize">{post.platform}</span>
-                </div>
-                {post.featured && (
-                  <div className="px-2 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-400/30">
-                    <span className="text-xs text-purple-300 font-medium">⭐ Featured</span>
-                  </div>
-                )}
-              </div>
 
               {/* Title */}
               <h3 className="text-xl font-bold text-white leading-tight hover:text-purple-300 transition-colors duration-300">
@@ -188,7 +105,7 @@ const Blogs = () => {
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-1">
                     <LuCalendar size={14} />
-                    <span>{new Date(post.publishedDate).toLocaleDateString()}</span>
+                    <span>{new Date(post.publishedDate).toLocaleDateString( 'en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <LuClock size={14} />
@@ -214,7 +131,7 @@ const Blogs = () => {
                 <LuExternalLink size={14} />
               </Link>
             </div>
-          </CardSpotlight>
+
         ))}
       </div>
 
