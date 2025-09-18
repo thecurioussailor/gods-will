@@ -13,7 +13,9 @@ const Hero = () => {
             <Link href="https://x.com/sagar11ashutosh" target="_blank" className="text-purple-400 hover:text-purple-300 transition-colors duration-300 cosmic-glow"><LuTwitter size={20}/></Link>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-left text-white">Hi, I'm Ashutosh,</h1>
-        <h2 className="text-base text-left text-white/80">Full Stack Developer | Blockchain Enthusiast | Recent Build: <Link href="https://trueman.ashutoshsagar.com/" target="_blank" className="text-purple-400 hover:text-purple-300 transition-colors duration-300">Trueman CEX in Rust</Link></h2>
+        <h2 className="text-base text-left text-white/80 flex flex-wrap gap-2">Full Stack Developer | Blockchain Enthusiast | Recent Build:  
+          <Link href="https://trueman.ashutoshsagar.com/" target="_blank" className="text-purple-400 hover:text-purple-300 transition-colors duration-300">Trueman CEX in Rust</Link> | <Link href="https://bonfire.ashutoshsagar.com/" target="_blank" className="text-purple-400 hover:text-purple-300 transition-colors duration-300">Bonfire - Web-based MPC Wallet</Link>
+        </h2>
         <TextGenerateEffect words={words} className="text-lg text-left w-5/6 font-normal"/>
     </div>
   )
