@@ -160,7 +160,7 @@ const Experience = () => {
                 inactiveZone={0.01}
               />
                 <p className="text-xl font-bold relative z-20 text-white">
-                    Software Engineer Intern <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://vecv.in" target="_blank">@Volvo and Eicher Commercial Vehicles</Link></span>
+                    Software Engineer Intern <span className="text-neutral-300 font-normal hover:text-purple-400 transition-all duration-300"><Link href="https://vecv.in" target="_blank">@Volvo and Eicher Commercial Vehicles</Link></span>
                 </p>
                 <p className="text-neutral-400 z-20 text-sm">
                     Internship
@@ -207,7 +207,7 @@ const Experience = () => {
                   inactiveZone={0.01}
                 />
                   <p className="text-xl font-bold relative z-20 text-white">
-                      Frontend Intern <span className="text-neutral-300 font-normal hover:text-[#1dd79b] transition-all duration-300"><Link href="https://artbeatentertainment.com" target="_blank">@Artbeat Entertainment</Link></span>
+                      Frontend Intern <span className="text-neutral-300 font-normal hover:text-purple-400 transition-all duration-300"><Link href="https://artbeatentertainment.com" target="_blank">@Artbeat Entertainment</Link></span>
                   </p>
                   <p className="text-neutral-400 z-20 text-sm">
                       Internship
