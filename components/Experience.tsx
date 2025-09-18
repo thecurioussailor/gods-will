@@ -7,7 +7,7 @@ const Experience = () => {
         {
             title: "Jul 2025 - Present",
             content: (
-              <div className="relative h-full flex flex-col gap-4 p-10 bg-black rounded-3xl">
+              <div className="relative h-full flex flex-col gap-4 p-6 md:p-10 bg-black rounded-3xl">
                 <GlowingEffect
                   spread={30}
                   glow={true}
