@@ -5,7 +5,66 @@ import Link from "next/link";
 const Experience = () => {
     const data = [
         {
-            title: "Jul 2025 - Present",
+          title: "Oct 2025 - Present",
+          content: (
+            <div className="relative h-full flex flex-col gap-4 p-10 bg-black rounded-3xl">
+              <GlowingEffect
+                spread={30}
+                glow={true}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+              />
+                <p className="text-xl font-bold relative z-20 text-white">
+                    Solana Mobile Engineer <span className="text-neutral-300 font-normal hover:text-purple-400 transition-all duration-300"><Link href="https://www.beunboxed.com/" target="_blank">@Unboxed</Link></span>
+                </p>
+                <p className="text-neutral-400 z-20 text-sm">
+                    Full Time
+                </p>
+                <div className="text-neutral-200 relative z-20">
+                <ul className="text-neutral-200 relative z-20 list-disc pl-4 space-y-2">
+                <li>
+                  Solana Mobile & Full-Stack engineer building a fantasy sports tournament app for Super Phoenix DAO.
+                </li>
+                <li>
+                  Shipped production brackets with on-chain USDC entry payments, including wallet connections, transaction signing, and payout logic for the first live tournament at Solana Breakpoint.
+                </li>
+                <li>
+                  Designed the backend with Supabase (Postgres, Auth, Storage, Edge Functions) including tournament state & payment verification via queues, webhooks, and scheduled cron jobs.
+                </li>
+                <li>
+                  Published the app on the Solana dApp Store and provided a web browser version for Android users without Seeker devices.
+                </li>
+                <li>
+                  Android Browser version: <Link href="https://clashoftitans.superphoenixdao.com/" target="_blank" className="hover:underline hover:text-purple-400 transition-all duration-300">clashoftitans.superphoenixdao.com</Link>
+                </li>
+              </ul>
+                </div>
+                <div className="flex flex-wrap gap-2 pt-4">
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">React Native</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Expo</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Solana Mobile Stack</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Typescript</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Solana USDC Payments</span>
+                    </button>
+                    <button className="px-2 py-1 rounded-full relative bg-slate-700/50 text-white text-xs tracking-wide border border-slate-600 hover:border-purple-500 hover:shadow-purple-500/[0.1] transition-colors duration-300">
+                        <span className="relative z-20">Supabase Backend</span>
+                    </button>
+                </div>
+            </div>
+          ),
+        },
+        {
+            title: "Jul 2025 - Sep 2025",
             content: (
               <div className="relative h-full flex flex-col gap-4 p-6 md:p-10 bg-black rounded-3xl">
                 <GlowingEffect

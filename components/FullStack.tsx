@@ -14,7 +14,7 @@ const items: ChromaItem[] = [
       ],
       handle: 'Rust, Next.js',
       demoUrl: "https://bonfire.ashutoshsagar.com/",
-      githubUrl: "https://github.com/thecurioussailor/bonfire", // replace with actual repo
+      githubUrl: "https://github.com/thecurioussailor/tiplink-clone", // replace with actual repo
       url: "",
       borderColor: "#FF7F50",
       gradient: "linear-gradient(165deg, #F59E0B, #000)",
