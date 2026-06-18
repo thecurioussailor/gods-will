@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         {children}
         <script
-  src="https://relaay-eight.vercel.app//widget.js"
+  src="https://relaay-eight.vercel.app/widget.js"
   data-org-id="45e31b47-e5bd-4c75-881f-d552d0e310ab"
   data-app-url="https://relaay-eight.vercel.app/"
 ></script>
