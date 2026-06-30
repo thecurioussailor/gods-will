@@ -31,9 +31,9 @@ export default function RootLayout({
       >
         {children}
         <script
-  src="https://relaay-eight.vercel.app/widget.js"
-  data-org-id="45e31b47-e5bd-4c75-881f-d552d0e310ab"
-  data-app-url="https://relaay-eight.vercel.app/"
+  src="https://www.trychatrelay.com/widget.js"
+  data-org-id="fa898b45-dd0c-4f09-af7d-2006fd71880a"
+  data-app-url="https://www.trychatrelay.com"
 ></script>
       </body>
     </html>
