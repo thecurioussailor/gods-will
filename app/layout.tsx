@@ -32,7 +32,8 @@ export default function RootLayout({
         {children}
         <script
   src="https://www.trychatrelay.com/widget.js"
-  data-org-id="fa898b45-dd0c-4f09-af7d-2006fd71880a"
+  data-embed-key="6cb60b81-d7eb-4f8d-8e10-99c3a0826bdc"
+  data-show-human-button="true"
   data-app-url="https://www.trychatrelay.com"
 ></script>
       </body>
