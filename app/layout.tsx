@@ -33,7 +33,6 @@ export default function RootLayout({
         <script
   src="https://www.trychatrelay.com/widget.js"
   data-embed-key="6cb60b81-d7eb-4f8d-8e10-99c3a0826bdc"
-  data-show-human-button="true"
   data-app-url="https://www.trychatrelay.com"
 ></script>
       </body>
